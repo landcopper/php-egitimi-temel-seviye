@@ -1,0 +1,13 @@
+//HTML Komutu ile ekrana yazı yazdırma.
+<h1>Mehmet Nuri Arslan HTML</h1>
+
+//PHP Komutları ile ekrana yazı yazdırma.
+<?php 
+
+echo '<h1>Mehmet Nuri Arslan ECHO</h1>';
+print '<h1>Mehmet Nuri Arslan PRINT';
+
+
+?>
+
+<?="Mehmet Nuri Arslan"?>
