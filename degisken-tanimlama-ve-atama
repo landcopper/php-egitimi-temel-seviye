@@ -1,0 +1,15 @@
+<?php 
+
+$isim="Mehmet Nuri Arslan";
+$isiM="Mehmet Kaya"; /* Değişkenler büyük küçük harflere karşı duyarlıdır.*/
+
+$sayi=45;
+$sayi2=21;
+
+$sayi=$sayi2; /* Değişkenlere en son neyi atarsak değeri o olur. */
+
+
+echo $sayi;
+
+
+ ?>
