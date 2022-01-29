@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3.PHP Eğitimi - Temel String Fonksiyonları 1</title>
+</head>
+<body>
+<!-- strlen substr str_replace strtoupper strtolower ucfirst ucword -->
+
+<?php 
+
+$metin="benim adım mehmet nuri aRSLAN";
+
+echo strlen($metin)."<br><br>"; /*metin içindeki karakter sayısını verir.*/
+
+echo mb_substr($metin, 3, 8,"UTF-8")."<br><br>";  /*metnin hangi karakterden başlayıp nereye kadar yazdırmak istiyorsanız.*/
+
+echo str_replace("Nuri", "Emin", $metin);  /*metin içindeki kelimeyi yeni bir kelime ile değiştirir.*/
+
+echo strtoupper($metin)."<br><br>";  /*metnin tüm harflerini büyük harfe çevirir.*/
+
+echo strtolower($metin)."<br><br>";  /*metnin tüm harflerini küçük harfe çevirir.*/
+
+echo ucfirst($metin)."<br><br>";  /*metindeki ilk harfi büyük harfe dönüştürür.*/
+
+echo ucwords($metin);  /*metnin tüm kelimelerindeki ilk harfi büyük yapar.*/
+
+
+ ?>
+
+</body>
+</html>
