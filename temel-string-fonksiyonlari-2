@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4.PHP Eğitimi - Temel String Fonksiyonları 2</title>
+</head>
+<body>
+<!-- strstr number_format wordwrap addslashes stripslashes strip_tags str_repeat nl2br -->
+
+<?php 
+
+$metin="Benim adım Mehmet Nuri Arslan";
+
+if (strstr($metin, "Ahmet")) {
+	echo "Aradığınız kelime metin içinde mevcuttur.";
+} else {
+	echo "Aradığınız kelime bulunamadı."."<br>";
+}
+
+$sayi=45.45789787;
+
+echo number_format($sayi,"2",".",",")."<hr/>";
+
+echo wordwrap($metin, 8, "<hr/>")."<br><br>";
+
+echo wordwrap($metin, 5, "<hr/>", true); 
+
+$metin2="PHP'de fonksiyonları öğreniyorum.";
+
+echo addslashes($metin2)."<br>";
+
+echo stripslashes($metin2); 
+
+$temizle="<i>Benim</i> adım Mehmet <strong>Nuri Arslan</strong>"."<br><br>";
+
+echo ($temizle);
+
+echo strip_tags($temizle);
+
+$isim="Mehmet Nuri Arslan"."<br>";
+
+echo str_repeat($isim, 6);
+
+$paragraf="Lorem Ipsum is simply dummy
+text of the printing and 
+typesetting industry. Lorem Ipsum has 
+been the industry's standard dummy 
+text ever since the 1500s, when an unknown printer 
+took a galley of type and scrambled it to 
+make a type specimen book. It has survived not
+ only five centuries, but also the leap into electronic
+  typesetting, remaining essentially unchanged.
+   It was popularised in the 1960s with the release 
+   of Letraset sheets containing Lorem Ipsum passages,
+    and more recently with desktop publishing software lik
+    e Aldus PageMaker including versions of Lorem Ipsum.";
+
+echo $paragraf;
+
+echo nl2br($paragraf);
+
+
+?>
+
+</body>
+</html>
